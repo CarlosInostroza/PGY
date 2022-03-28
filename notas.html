@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="justify-content: space-between;">
+        <a class="navbar-brand" href="index.html"><img src="img/logo_com.png" alt="" style="width: 250px;"></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="alumnos.html">Alumno</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Notas</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <nav class="navbar bg-dark navbar-dark">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alumnos.html">Alumno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-10">
+                <div class="row table-dark">
+                    <div class="col-sm-10">
+                        <form action="notas.html" method="GET">
+                            <div class="form-group">
+                              <label for="txtRut">Rut:</label>
+                              <input type="text" class="form-control" placeholder="EJ:20455239-8" id="txtRut" name="txtRut">
+                            </div>
+                            <div class="form-group">
+                              <label for="txtNota">Nota:</label>
+                              <input type="text" class="form-control" placeholder="EJ:70" id="txtNota" name="txtNota">
+                            </div>
+                            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-secondary">
+                            <input type="reset" id="btnLimpiar" name="btnLimpiar" class="btn btn-danger">
+                          </form>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-10" style="margin-left: -15px;">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                              <tr>
+                                <th>Rut</th>
+                                <th>Nota 1</th>
+                                <th>Nota 2</th>
+                                <th>Nota 3</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>20.455.239-8</td>
+                                <td>59</td>
+                                <td>60</td>
+                                <td>40</td>
+                              </tr>
+                              <tr>
+                                <td>19.589.294-8</td>
+                                <td>48</td>
+                                <td>59</td>
+                                <td>70</td>
+                              </tr>
+                              <tr>
+                                <td>17.598.6235-8</td>
+                                <td>70</td>
+                                <td>70</td>
+                                <td>70</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="background-color: rgb(39, 39, 39); margin-bottom:0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="img/logo-duoc.png" alt="" style="width: 250px;" >
+                </div>
+                <div class="col-sm-8"></div>
+                <div class="col-sm-2">
+                    <img src="img/acreditacion.png" alt="" style="width: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
